@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassine Bouabid | Mechanical Design Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="cyber-loader"></div>
+        <div class="loading-text">INITIALIZING SYSTEMS</div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en"><i class="fas fa-language"></i> EN</button>
+        <button class="lang-btn" data-lang="fr"><i class="fas fa-language"></i> FR</button>
+    </div>
+
+    <!-- Floating Tech Elements -->
+    <div class="floating-tech" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="floating-tech" style="top: 60%; left: 80%; animation-delay: 5s;"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Y<span>B</span></a>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> <span data-translate="home">Home</span></a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> <span data-translate="about">About</span></a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> <span data-translate="experience">Experience</span></a></li>
+                <li><a href="#education"><i class="fas fa-graduation-cap"></i> <span data-translate="education">Education</span></a></li>
+                <li><a href="#certifications"><i class="fas fa-certificate"></i> <span data-translate="certifications">Certifications</span></a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> <span data-translate="projects">Projects</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> <span data-translate="contact">Contact</span></a></li>
+                <div class="header-controls">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </ul>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="sidebar-title" data-translate="quick_links">Quick Links</h3>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <div class="sidebar-section">
+                <h3 data-translate="navigation">Navigation</h3>
+                <ul class="sidebar-links">
+                    <li><a href="#home"><i class="fas fa-home"></i> <span data-translate="home">Home</span></a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> <span data-translate="about">About</span></a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> <span data-translate="experience">Experience</span></a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> <span data-translate="education">Education</span></a></li>
+                    <li><a href="#certifications"><i class="fas fa-certificate"></i> <span data-translate="certifications">Certifications</span></a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> <span data-translate="projects">Projects</span></a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> <span data-translate="contact">Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3 data-translate="contact_info">Contact Info</h3>
+                <ul class="sidebar-links">
+                    <li><a href="mailto:bouabid.yassine@outlook.com"><i class="fas fa-envelope"></i> bouabid.yassine@outlook.com</a></li>
+                    <li><a href="tel:+212653568835"><i class="fas fa-phone"></i> +212 6 53 56 88 35</a></li>
+                    <li><a href="https://www.linkedin.com/in/bouabid-yassine" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3 data-translate="settings">Settings</h3>
+                <ul class="sidebar-links">
+                    <li><a href="#" class="sidebar-theme-toggle"><i class="fas fa-moon"></i> <span data-translate="dark_mode">Dark Mode</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="cyber-grid"></div>
+        <div class="hero-content">
+            <h1>Yassine <span>Bouabid</span></h1>
+            <h2 data-translate="hero_title">Mechanical Design & Simulation Engineer</h2>
+            <p data-translate="hero_desc">Specializing in CAD design, numerical simulation, and mechanical systems optimization with a passion for innovation and smart systems.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn" data-translate="view_work">View My Work</a>
+                <a href="#contact" class="btn btn-outline" data-translate="contact_me">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="scrollToSection('#about')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-title">
+            <h2 data-translate="about_me">About Me</h2>
+            <p data-translate="about_sub">Get to know more about my professional background and skills</p>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="profile.jpg" alt="Yassine Bouabid" id="profile-photo">
+            </div>
+            <div class="about-text">
+                <h3 data-translate="about_title">Mechanical Engineering Specialist</h3>
+                <p data-translate="about_desc1">Motivated and detail-oriented Mechanical Engineering master's student with hands-on experience in electromechanical systems, 3D design (CATIA V5, SolidWorks), and numerical simulation using Abaqus.</p>
+                <p data-translate="about_desc2">Passionate about innovation, robotics, and smart systems design, with strong analytical and problem-solving skills. Known for adaptability, teamwork, and a proactive mindset in technical environments.</p>
+                
+                <div class="skills">
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CATIA V5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SolidWorks</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Abaqus</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-title">
+            <h2 data-translate="experience_title">Professional Experience</h2>
+            <p data-translate="experience_sub">My journey through various technical roles and responsibilities</p>
+        </div>
+        <div class="experience-container">
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-tab="professional">Professional</button>
+                <button class="tab-btn" data-tab="organizations">Organizations</button>
+                <button class="tab-btn" data-tab="interests">Interests</button>
+            </div>
+            
+            <div class="experience-content">
+                <!-- Professional Experience -->
+                <div class="tab-panel active" id="professional">
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date"><i class="far fa-calendar-alt"></i> June 2024 - October 2024</div>
+                                <h3 class="timeline-title" data-translate="exp1_title">Technical Conceptor – Internship</h3>
+                                <div class="timeline-company"><i class="fas fa-building"></i> <span data-translate="exp1_company">Commune of Oulad Ali Toualaa, Casablanca</span></div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li data-translate="exp1_desc1">Updated technical schematics and ensured consistency in technical documentation</li>
+                                        <li data-translate="exp1_desc2">Conducted mechanical design training sessions (CAD) for technical staff</li>
+                                        <li data-translate="exp1_desc3">Recognized for technical proficiency, autonomy, and effective knowledge transfer</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <div class="timeline-date"><i class="far fa-calendar-alt"></i> Apr 2024 - Apr 2024</div>
+                                <h3 class="timeline-title" data-translate="exp2_title">Volunteer – Humanitarian Operations</h3>
+                                <div class="timeline-company"><i class="fas fa-building"></i> <span data-translate="exp2_company">Association Lueur d'Espoir, Tangier</span></div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li data-translate="exp2_desc1">Organized and distributed aid to families in need during Ramadan</li>
+                                        <li data-translate="exp2_desc2">Engaged in community support and awareness campaigns on social responsibility</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <div class="timeline-date"><i class="far fa-calendar-alt"></i> Feb 2021 - May 2021</div>
+                                <h3 class="timeline-title" data-translate="exp3_title">Electromechanical Technician – Internship</h3>
+                                <div class="timeline-company"><i class="fas fa-building"></i> <span data-translate="exp3_company">SAHARA PLOMB, Casablanca</span></div>
+                                <div class="timeline-desc">
+                                    <ul>
+                                        <li data-translate="exp3_desc1">Conducted preventive and corrective maintenance on heavy industrial equipment</li>
+                                        <li data-translate="exp3_desc2">Assisted in diagnostics and repair of electrical and mechanical systems</li>
+                                        <li data-translate="exp3_desc3">Participated in technical documentation and reporting processes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Organizations -->
+                <div class="tab-panel" id="organizations">
+                    <div class="organization-card">
+                        <h3>Member – Auto & Aero Mechanics Club (2AMECA)</h3>
+                        <div class="org-details">
+                            <span><i class="fas fa-calendar-alt"></i> Nov 2024 – Present</span>
+                            <span><i class="fas fa-map-marker-alt"></i> FSAC, Casablanca</span>
+                        </div>
+                        <ul class="org-description">
+                            <li>Participated in automotive and aerospace mechanical projects</li>
+                            <li>Completed workshops on CATIA V5 and simulation software</li>
+                            <li>Collaborated on technical projects with industry partners</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Interests -->
+                <div class="tab-panel" id="interests">
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Online Competitions</h4>
+                            <p>Participating in coding, creativity, and technical challenges</p>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-book-reader"></i>
+                            <h4>Technical Reading</h4>
+                            <p>Scientific literature and science fiction</p>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <h4>Technical Writing</h4>
+                            <p>Creating simplified technical articles for social media</p>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-video"></i>
+                            <h4>Video Editing</h4>
+                            <p>Creative video montage and technical demonstrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="section-title">
+            <h2 data-translate="education_title">Education</h2>
+            <p data-translate="education_sub">My academic journey and qualifications</p>
+        </div>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="education-date"><i class="far fa-calendar-alt"></i> 2024 – Present</div>
+                <h3 class="education-title" data-translate="edu1_title">Master's in Numerical Design & Simulation in Mechanics</h3>
+                <div class="education-school"><i class="fas fa-university"></i> <span data-translate="edu1_school">FSAC – Centre d'Excellence Mécatronique, Casablanca</span></div>
+                <div class="education-desc">
+                    <ul>
+                        <li data-translate="edu1_desc1">Advanced training in computer-aided design (CAD) and numerical simulation (FEM, FEA)</li>
+                        <li data-translate="edu1_desc2">In-depth application of tools such as CATIA V5, SolidWorks, and Abaqus</li>
+                        <li data-translate="edu1_desc3">Focus on mechatronic systems, intelligent automation, and vibration analysis (NVH)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-date"><i class="far fa-calendar-alt"></i> 2023 – 2024</div>
+                <h3 class="education-title" data-translate="edu2_title">Bachelor's in Numerical Design & Simulation in Mechanics</h3>
+                <div class="education-school"><i class="fas fa-university"></i> <span data-translate="edu2_school">FSAC – Centre d'Excellence Mécatronique, Casablanca</span></div>
+                <div class="education-desc">
+                    <ul>
+                        <li data-translate="edu2_desc1">Solid foundation in 3D modeling, finite element analysis, and dynamic simulation</li>
+                        <li data-translate="edu2_desc2">Applied theoretical concepts to real-world simulations and virtual prototyping</li>
+                        <li data-translate="edu2_desc3">Use of Matlab, Python, and Arduino for technical and control system simulations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-date"><i class="far fa-calendar-alt"></i> 2021 – 2023</div>
+                <h3 class="education-title" data-translate="edu3_title">BTS in Electromechanics & Automated Systems</h3>
+                <div class="education-school"><i class="fas fa-university"></i> <span data-translate="edu3_school">Lycée Technique de Settat</span></div>
+                <div class="education-desc">
+                    <ul>
+                        <li data-translate="edu3_desc1">Practical training in electrical and mechanical system design, installation, and maintenance</li>
+                        <li data-translate="edu3_desc2">Hands-on experience with automated production lines, control systems, and CNC machines</li>
+                        <li data-translate="edu3_desc3">Learning modules included preventive maintenance, technical diagnostics, and system integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-card">
+                <div class="education-date"><i class="far fa-calendar-alt"></i> 2020 – 2021</div>
+                <h3 class="education-title" data-translate="edu4_title">High School Diploma in Electrical Science & Technology</h3>
+                <div class="education-school"><i class="fas fa-university"></i> <span data-translate="edu4_school">Lycée Charif El Idrissi, Benslimane</span></div>
+                <div class="education-desc">
+                    <ul>
+                        <li data-translate="edu4_desc1">Focused on core engineering principles in physics, electrical circuits, and technical drawing</li>
+                        <li data-translate="edu4_desc2">Developed logical thinking and solid mathematical foundation for engineering studies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+        <div class="section-title">
+            <h2 data-translate="certifications_title">Certifications</h2>
+            <p data-translate="certifications_sub">Professional certifications and specialized training</p>
+        </div>
+        <div class="certifications-container">
+            <!-- Certification 1 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <h3 data-translate="cert1_title">Modelling & Simulation of Mechanical Systems</h3>
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <div class="certification-issuer">
+                        <i class="fas fa-university"></i> Università di Napoli Federico II — Coursera, 2024
+                    </div>
+                    <div class="certification-desc" data-translate="cert1_desc">
+                        Comprehensive training in mechanical system modeling and simulation techniques.
+                    </div>
+                    <a href="#" class="certification-link" data-translate="view_cert">View Certificate</a>
+                </div>
+            </div>
+            
+            <!-- Certification 2 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <h3 data-translate="cert2_title">Automotive Industrial Engineering</h3>
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <div class="certification-issuer">
+                        <i class="fas fa-industry"></i> Starweaver — 2024
+                    </div>
+                    <div class="certification-desc" data-translate="cert2_desc">
+                        Specialized training in automotive manufacturing processes and industrial engineering.
+                    </div>
+                    <a href="#" class="certification-link" data-translate="view_cert">View Certificate</a>
+                </div>
+            </div>
+            
+            <!-- Certification 3 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <h3 data-translate="cert3_title">Digital Fabrication & Design</h3>
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <div class="certification-issuer">
+                        <i class="fas fa-university"></i> University at Buffalo (SUNY) — Coursera, 2025
+                    </div>
+                    <div class="certification-desc" data-translate="cert3_desc">
+                        Hands-on training in digital fabrication techniques and design principles.
+                    </div>
+                    <a href="#" class="certification-link" data-translate="view_cert">View Certificate</a>
+                </div>
+            </div>
+            
+            <!-- Certification 4 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <h3 data-translate="cert4_title">Finite Element Analysis with Abaqus</h3>
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <div class="certification-issuer">
+                        <i class="fas fa-graduation-cap"></i> Skill Lync — 2024
+                    </div>
+                    <div class="certification-desc" data-translate="cert4_desc">
+                        Advanced training in FEA techniques using Abaqus software.
+                    </div>
+                    <a href="#" class="certification-link" data-translate="view_cert">View Certificate</a>
+                </div>
+            </div>
+            
+            <!-- Certification 5 -->
+            <div class="certification-card">
+                <div class="certification-header">
+                    <h3 data-translate="cert5_title">CATIA V5 from Beginner to Advanced Level</h3>
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <div class="certification-issuer">
+                        <i class="fas fa-graduation-cap"></i> Udemy — 2025
+                    </div>
+                    <div class="certification-desc" data-translate="cert5_desc">
+                        Comprehensive CATIA V5 training covering all skill levels.
+                    </div>
+                    <a href="#" class="certification-link" data-translate="view_cert">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-title">
+            <h2 data-translate="projects_title">Projects</h2>
+            <p data-translate="projects_sub">Selected engineering projects and achievements</p>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Automotive Shock Absorber Simulation">
+                    <div class="project-overlay">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 data-translate="proj1_title">Automotive Shock Absorber Simulation</h3>
+                    <p data-translate="proj1_desc">Numerical Modeling & Dynamic Analysis using Python to simulate vehicle shock absorber behavior under various conditions.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag" data-translate="proj1_tag1">Numerical Methods</span>
+                        <span class="tag" data-translate="proj1_tag2">Dynamics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> <span data-translate="view_project">View Project</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581093057305-2551d500d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mechanical Bracket FEA">
+                    <div class="project-overlay">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 data-translate="proj2_title">Mechanical Bracket FEA</h3>
+                    <p data-translate="proj2_desc">Design and Finite Element Analysis of a Mechanical Bracket using SolidWorks & Abaqus for industrial applications.</p>
+                    <div class="project-tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">Abaqus</span>
+                        <span class="tag">FEA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> <span data-translate="view_project">View Project</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="4-Cylinder Engine Simulation">
+                    <div class="project-overlay">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 data-translate="proj3_title">4-Cylinder Engine Simulation</h3>
+                    <p data-translate="proj3_desc">3D Modeling & Kinematic Analysis of a four-cylinder engine using CATIA V5, simulating internal component motion.</p>
+                    <div class="project-tags">
+                        <span class="tag">CATIA V5</span>
+                        <span class="tag" data-translate="proj3_tag1">Kinematics</span>
+                        <span class="tag" data-translate="proj3_tag2">Simulation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> <span data-translate="view_project">View Project</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smart Irrigation System">
+                    <div class="project-overlay">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 data-translate="proj4_title">Smart Irrigation System</h3>
+                    <p data-translate="proj4_desc">Automated agricultural irrigation system with soil moisture sensors and remote monitoring capabilities.</p>
+                    <div class="project-tags">
+                        <span class="tag">Arduino</span>
+                        <span class="tag">IoT</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> <span data-translate="view_project">View Project</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="section-title">
+            <h2 data-translate="contact_title">Get In Touch</h2>
+            <p data-translate="contact_sub">Feel free to reach out for collaborations or just a friendly hello</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 data-translate="contact_info_title">Contact Information</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="email">Email</h4>
+                            <a href="mailto:bouabid.yassine@outlook.com">bouabid.yassine@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="phone">Phone</h4>
+                            <a href="tel:+212653568835">+212 6 53 56 88 35</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4 data-translate="location">Location</h4>
+                            <p data-translate="address">Casablanca, Morocco</p>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="margin-top: 3rem;" data-translate="follow_me">Follow Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bouabid-yassine" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yassine-bouabid" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/yassine_bouabid" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/yassine_bouabid" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-translate="send_message">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="footer-logo">Y<span>B</span></a>
+            <div class="footer-links">
+                <a href="#home" data-translate="home">Home</a>
+                <a href="#about" data-translate="about">About</a>
+                <a href="#experience" data-translate="experience">Experience</a>
+                <a href="#education" data-translate="education">Education</a>
+                <a href="#certifications" data-translate="certifications">Certifications</a>
+                <a href="#projects" data-translate="projects">Projects</a>
+                <a href="#contact" data-translate="contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/bouabid-yassine" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/yassine-bouabid" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/yassine_bouabid" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yassine_bouabid" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; <span id="year"></span> Yassine Bouabid. <span data-translate="rights">All rights reserved</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
